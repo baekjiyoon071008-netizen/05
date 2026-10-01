@@ -7,12 +7,10 @@ int main()
     printf("Input an integer: ");
     scanf("%d", &num);
 
-    if (num > 0)
-        printf("positive number");
-    else if (num < 0)
-        printf("negative number");
-    else
-        printf("zero");
+    if (num < 0)
+        num = -num;;
+    
+    printf("Absolute value: %d" , num);
 
     return 0;
 }
